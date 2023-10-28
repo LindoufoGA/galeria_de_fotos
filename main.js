@@ -10,7 +10,7 @@ $(document).ready(function(){
     $('form').on('submit', function(e) {
         e.preventDefault();
         const enderecoNovaImagem = $('#input-imagem').val();
-        const novoItem = $('<li style="display:none"></li>')
+        const novoItem = $('<li style="display:none"></li>');
         $(`<img src="${enderecoNovaImagem}" />`).appendTo(novoItem);
         $(`
             <div class="overlay-imagem-link">
@@ -24,4 +24,4 @@ $(document).ready(function(){
         $('#input-imagem').val('');
 
     })
-})
+})  
